@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    font-size: 12px;
+    box-sizing:content-box;
+    font-family: "ËÎÌו","Microsoft YaHei",Arial;
+}
+a{
+    color:#6c6c6c;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+input{
+    border:0;
+    outline: none;
+}
+i{
+    font-style: normal;
+}
+.ol, ul, dl{
+    margin-bottom:0;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    margin-bottom:0;
+    font-size: 12px;
+}
