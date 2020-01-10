@@ -1,3 +1,4 @@
+/*顶部样式*/
 .top{
     width:100%;
     height:34px;
@@ -78,6 +79,7 @@
     padding:0;
     background:url(../image/index/ico.png) no-repeat -24px 8px;
 }
+/*顶部样式，包括左侧logo和搜索框*/
 .top_header{
     width:1200px;
     margin:auto;
@@ -111,6 +113,9 @@
     text-align: center;
     color:#fff;
 }
+.theader_input>a:hover{
+    color:#fff;
+}
 .theader_input>ul>li{
     float:left;
     margin-top:10px;
@@ -124,6 +129,7 @@
 .theader_input>ul>li>.th_red{
     color:red;
 }
+/*购物车按钮*/
 .shop_car{
     width:100px;
     height:40px;
@@ -169,6 +175,7 @@
     height:21px;
     background:url(../image/index/ico_gwc.png) no-repeat;
 }
+/*导航栏*/
 .nav{
     width:100%;
 }
@@ -176,14 +183,14 @@
     width:1200px;
     margin:auto;
 }
+/*商品所有分类导航栏，包括该分类下的所有导航*/
 .classify{
     float:left;
     position: relative;
 }
 .classify>ul{
     position:absolute;
-    z-index: 1;
-    text-indent: 30px;
+    z-index: 3;
     background: #202020;
     padding-bottom:30px;
 }
@@ -196,8 +203,13 @@
     background:#c32c36;
 }
 .classify>ul>li>a{
+    display: inline-block;
     font-size: 14px;
     color:#fff;
+    margin-left:30px;
+    width:185px;
+    height: 39px;
+    line-height: 39px;
 }
 .classify>h2{
     width:185px;
@@ -210,26 +222,139 @@
     font-size: 14px;
     color:#fff;
 }
-.nav_right{
-    width:1200px;
-    margin:auto;
-    position:relative;
+.li_hover1:hover+.hover1{
+    opacity: 1;
 }
-.nr_top,.nr_bottom{
-    position: absolute;
+.li_hover2:hover+.hover2{
+    opacity: 1;
+}
+.li_hover3:hover+.hover3{
+    opacity: 1;
+}
+.li_hover4:hover+.hover4{
+    opacity: 1;
+}
+.li_hover5:hover+.hover5{
+    opacity: 1;
+}
+.li_hover6:hover+.hover6{
+    opacity: 1;
+}
+.li_hover7:hover+.hover7{
+    opacity: 1;
+}
+.li_hover8:hover+.hover8{
+    opacity: 1;
+}
+.li_hover9:hover+.hover9{
+    opacity: 1;
+}
+.li_hover10:hover+.hover10{
+    opacity: 1;
+}
+.li_hover11:hover+.hover11{
+    opacity: 1;
+}
+.li_hover12:hover+.hover12{
+    opacity: 1;
+}
+.hid1{
+    width:1015px;
+    height:500px;
+    background:#f8f8f8;
+    position:absolute;
     top:0;
-    right:0;
-    z-index: 2;
-    background: rgba(0,0,0,.3);
-    box-shadow: -2px 2px 6px rgba(0,0,0,.3);
+    left:185px;
+    opacity: 0;
 }
-.nr_bottom{
-    top:294px;
-    right:0;
+.hid1_top{
+    width:950px;
+    height:50px;
+    margin:auto;
+    line-height: 50px;
+    text-indent: 0;
+    border-bottom:2px solid #d8d8d8;
 }
-.nr_bottom img{
-    width:153px;
+.hid1_top>.a_left{
+    float:left;
+    font-size: 14px;
+    color:#302C34;
+    font-weight: 400;
 }
+.hid1_top>.a_left:hover,.hid1_top>.a_right:hover{
+    color:#DA3E49;
+}
+.hid1_top>.a_right{
+    float:right;
+}
+.a_right>em{
+    display: inline-block;
+    width:17px;
+    height:18px;
+    margin-left:8px;
+    vertical-align: middle;
+    background:url(../image/index/jtbg.png) no-repeat;
+}
+.hid1_content{
+    width:950px;
+    margin:auto;
+}
+.h1_c_left{
+    width:655px;
+    height:425px;
+    overflow: scroll;
+    float:left;
+    border-right:1px solid #d8d8d8;
+}
+.h1_c_left_list1{
+    border-top:1px dashed #d8d8d8;
+}
+.h1_c_left_list1>a{
+    display: block;
+    font-weight: bold;
+    color:#302C34;
+}
+.h1_c_left_list1>a:hover{
+    color:#DA3E49;
+}
+.h1_c_left_list1>a>em{
+    display: inline-block;
+    width:17px;
+    height:18px;
+    margin-left:8px;
+    vertical-align: middle;
+    background:url(../image/index/jtbg.png) no-repeat;
+}
+.h1_c_left_list1>ul>li{
+    float:left;
+}
+.h1_c_left_list1>ul>li+li{
+    margin-left:20px;
+}
+.h1_c_left_list1>ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.h1_c_right{
+    width:240px;
+    float:right;
+    padding:20px;
+}
+.h1_c_right>p{
+    line-height: 25px;
+    margin-top:10px;
+    margin-bottom:0;
+    color:#9d9d9d;
+}
+.h1_c_right>a{
+    color:#004497;
+}
+.h1_c_right>a+a{
+    margin-left:15px;
+}
+
+/*导航栏右边几个样式*/
 .nav_ul{
     float:left;
 }
@@ -257,6 +382,28 @@
 .nav_content>ul>li+li:hover{
     background:#faf0e8;
 }
+/*轮播上面右侧两张广告图*/
+.nav_right{
+    width:1200px;
+    margin:auto;
+    position:relative;
+}
+.nr_top,.nr_bottom{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 1;
+    background: rgba(0,0,0,.3);
+    box-shadow: -2px 2px 6px rgba(0,0,0,.3);
+}
+.nr_bottom{
+    top:294px;
+    right:0;
+}
+.nr_bottom{
+    width:153px;
+}
+/*轮播图内容*/
 .carousel-item>a>img{
    width:100%;
     height:480px;
@@ -283,6 +430,9 @@
 }
 .carousel-control-prev:hover,.carousel-control-next:hover{
     opacity:0.5;
+}
+.carousel-indicators{
+    z-index: 0;
 }
 .carousel-indicators>li{
     width:20px;
