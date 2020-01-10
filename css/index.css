@@ -222,41 +222,41 @@
     font-size: 14px;
     color:#fff;
 }
-.li_hover1:hover+.hover1{
-    opacity: 1;
+.li_hover1:hover>.hover1{
+    display: block;
 }
-.li_hover2:hover+.hover2{
-    opacity: 1;
+.li_hover2:hover>.hover2{
+    display: block;
 }
-.li_hover3:hover+.hover3{
-    opacity: 1;
+.li_hover3:hover>.hover3{
+    display: block;
 }
-.li_hover4:hover+.hover4{
-    opacity: 1;
+.li_hover4:hover>.hover4{
+    display: block;
 }
-.li_hover5:hover+.hover5{
-    opacity: 1;
+.li_hover5:hover>.hover5{
+    display: block;
 }
-.li_hover6:hover+.hover6{
-    opacity: 1;
+.li_hover6:hover>.hover6{
+    display: block;
 }
-.li_hover7:hover+.hover7{
-    opacity: 1;
+.li_hover7:hover>.hover7{
+    display: block;
 }
-.li_hover8:hover+.hover8{
-    opacity: 1;
+.li_hover8:hover>.hover8{
+    display: block;
 }
-.li_hover9:hover+.hover9{
-    opacity: 1;
+.li_hover9:hover>.hover9{
+    display: block;
 }
-.li_hover10:hover+.hover10{
-    opacity: 1;
+.li_hover10:hover>.hover10{
+    display: block;
 }
-.li_hover11:hover+.hover11{
-    opacity: 1;
+.li_hover11:hover>.hover11{
+    display: block;
 }
-.li_hover12:hover+.hover12{
-    opacity: 1;
+.li_hover12:hover>.hover12{
+    display: block;
 }
 .hid1{
     width:1015px;
@@ -265,7 +265,7 @@
     position:absolute;
     top:0;
     left:185px;
-    opacity: 0;
+    display: none;
 }
 .hid1_top{
     width:950px;
