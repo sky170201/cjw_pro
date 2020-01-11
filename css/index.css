@@ -302,7 +302,7 @@
 .h1_c_left{
     width:655px;
     height:425px;
-    overflow: scroll;
+    overflow-y: scroll;
     float:left;
     border-right:1px solid #d8d8d8;
 }
@@ -310,6 +310,7 @@
     border-top:1px dashed #d8d8d8;
 }
 .h1_c_left_list1>a{
+    width:100px;
     display: block;
     font-weight: bold;
     color:#302C34;
@@ -397,7 +398,7 @@
     box-shadow: -2px 2px 6px rgba(0,0,0,.3);
 }
 .nr_bottom{
-    top:294px;
+    top:293px;
     right:0;
 }
 .nr_bottom{
@@ -405,9 +406,10 @@
 }
 /*ÂÖ²¥Í¼ÄÚÈÝ*/
 .carousel-item>a>img{
-   width:100%;
+    width:1920px;
     height:480px;
-   vertical-align: middle;
+    margin-left:-244px;
+    vertical-align: middle;
 }
 .carousel-control-next,.carousel-control-prev{
     width:45px;
