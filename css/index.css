@@ -394,7 +394,7 @@
 .h1_c_left{
     width:655px;
     height:425px;
-    overflow: scroll;
+    overflow-y: scroll;
     float:left;
     border-right:1px solid #d8d8d8;
 }
