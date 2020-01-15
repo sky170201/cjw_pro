@@ -2419,15 +2419,17 @@
 
                             var line=document.getElementsByClassName("f1_line")[0];
                             var style=getComputedStyle(line);
-                            var left=style.left;
-                            var newLeft=parseInt(left.slice(0,-2));
-                            var n=newLeft+i*120;
+//                            var left=style.left;
+//                            var newLeft=parseInt(left.slice(0,-2));
+//                            var n=newLeft+i*120;
+                            var n=i*120;
                             var n1=`${n}px`;
                             line.style.left=n1;
                         }
                         tabs[i].onmouseleave=function(){
                             var line=document.getElementsByClassName("f1_line")[0];
-                            line.style.left=0;
+                            var style=getComputedStyle(line);
+                            line.style.left=style.left;
                         }
                     }
                 </script>
