@@ -1032,3 +1032,116 @@
     margin:25px 0;
     background: url(../image/index/footer/line.jpg);
 }
+.foot_secon{
+    width:1200px;
+    margin:auto;
+    border-bottom:1px solid #D5D5D5;
+    padding:15px 0 40px 0;
+}
+.foot_secon>ul{
+    display: flex;
+    justify-content:space-around;
+}
+.foot_secon>ul>li{
+    width:33%;
+}
+.foot_secon>ul>li>img,.foot_secon>ul>li>div{
+    float:left;
+}
+.foot_secon>ul>li>div{
+    margin-left:20px;
+}
+.foot_secon>ul>li>div>h3{
+    font-size:18px;
+    font-weight: normal;
+    line-height: 40px;
+}
+.foot_secon>ul>li>div>p{
+    color:#6b6b6b;
+    font-size: 12px;
+}
+.foot_secon>ul>li>div>a{
+    display: inline-block;
+    line-height: 22px;
+    height:22px;
+    border:1px solid #ddd;
+    padding-right:6px;
+    padding-left:25px;
+}
+.foot_secon>ul>li>div>a:hover{
+    color:#E9781B;
+}
+.foot_secon>ul>li>div>.foota1{
+    background: url(../image/index/footer/iphone.jpg) no-repeat 5px 1px;
+}
+.foot_secon>ul>li>div>a:last-child{
+    margin-left:15px;
+    background: url(../image/index/footer/android.jpg) no-repeat 5px 1px;
+}
+.footimg{
+    text-align: center;
+    margin-top:35px;
+}
+.foota{
+    text-align: center;
+    height: 25px;
+    color:#636262;
+    margin:30px 0 20px;
+}
+.foota>em{
+    padding:0 15px;
+    font-style: normal;
+}
+.footp{
+    text-align: center;
+}
+.footp>p{
+    color:rgb(99, 98, 98);
+    line-height: 20px;
+    margin-bottom: 0;
+    font-family: Arial;
+}
+.footp>p>a:hover{
+    color:#E9781B;
+}
+.footbot{
+    text-align: center;
+}
+.footbot>a:last-child>img{
+    width:47px;
+}
+.rightFloat{
+    position: fixed;
+    top:209px;
+    left:105px;
+}
+.rightFloat>ul>li{
+    border-right:1px solid #d5d5d5;
+    border-bottom:1px solid #d5d5d5;
+    border-left:1px solid #d5d5d5;
+    text-align: center;
+    position: relative;
+    width:39px;
+}
+.rightFloat>ul>li:first-child{
+border-top:1px solid #d5d5d5;
+}
+.rightFloat>ul>li>a:first-child{
+    background: #da3d48;
+    color:#fff;
+    font-size: 12px;
+    height:29px;
+    width:29px;
+    line-height: 110%;
+    text-align: center;
+    z-index: 500;
+    position: absolute;
+    top:0px;
+    left:0px;
+    padding:5px;
+    display: none;
+}
+.rightFloat>ul>li:hover>a:first-child{
+    display: block;
+}
+
