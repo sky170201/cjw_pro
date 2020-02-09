@@ -1210,8 +1210,8 @@
 .rightFloat{
     position: fixed;
     bottom:209px;
-    left:6.6%;
     display: none;
+    margin-left:-55px;
 }
 .rightFloat>ul>li{
     border-right:1px solid #d5d5d5;
@@ -1241,6 +1241,11 @@ border-top:1px solid #d5d5d5;
 }
 .rightFloat>ul>li:hover>a:first-child{
     display: block;
+}
+/* 最外层div */
+#bigout{
+    width:1200px;
+    margin:auto;
 }
 /* 右侧固定栏 */
 .leftFix{

@@ -1,4 +1,4 @@
-/*¶¥²¿ÑùÊ½*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½*/
 .top{
     width:100%;
     height:34px;
@@ -60,7 +60,7 @@
 .top_ul_left_li4>a:hover{
     color:#F57605;
 }
-/*ÒÆ¶¯¿Í»§¶ËºÍÎ¢ÐÅ·þÎñºÅhover¶þÎ¬Âë*/
+/*ï¿½Æ¶ï¿½ï¿½Í»ï¿½ï¿½Ëºï¿½Î¢ï¿½Å·ï¿½ï¿½ï¿½ï¿½hoverï¿½ï¿½Î¬ï¿½ï¿½*/
 .topleft_li1,.topleft_li2{
     position:relative;
     width:102px;
@@ -107,7 +107,7 @@
 .top_ewm>div span{
     color:red;
 }
-/*ÒÆ¶¯¿Í»§¶ËºÍÎ¢ÐÅ·þÎñºÅhover¶þÎ¬Âë ÑùÊ½½áÊø´¦*/
+/*ï¿½Æ¶ï¿½ï¿½Í»ï¿½ï¿½Ëºï¿½Î¢ï¿½Å·ï¿½ï¿½ï¿½ï¿½hoverï¿½ï¿½Î¬ï¿½ï¿½ ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 
 .top_ul_right>li:hover>a{
     color:#F57605;
@@ -168,7 +168,7 @@
     display: block;
 }
 
-/*¶¥²¿ÑùÊ½£¬°üÀ¨×ó²àlogoºÍËÑË÷¿ò*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½logoï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .top_header{
     width:1200px;
     margin:auto;
@@ -218,7 +218,7 @@
 .theader_input>ul>li>.th_red{
     color:red;
 }
-/*¹ºÎï³µ°´Å¥*/
+/*ï¿½ï¿½ï¿½ï³µï¿½ï¿½Å¥*/
 .shop_car{
     width:100px;
     height:40px;
@@ -264,7 +264,7 @@
     height:21px;
     background:url(../image/index/ico_gwc.png) no-repeat;
 }
-/*µ¼º½À¸*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .nav{
     width:100%;
 }
@@ -272,14 +272,14 @@
     width:1200px;
     margin:auto;
 }
-/*ÉÌÆ·ËùÓÐ·ÖÀàµ¼º½À¸£¬°üÀ¨¸Ã·ÖÀàÏÂµÄËùÓÐµ¼º½*/
+/*ï¿½ï¿½Æ·ï¿½ï¿½ï¿½Ð·ï¿½ï¿½àµ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½*/
 .classify{
     float:left;
     position: relative;
 }
 .classify>ul{
     position:absolute;
-    z-index: 3;
+    z-index: 300;
     background: #202020;
     padding-bottom:30px;
 }
@@ -452,7 +452,7 @@
     margin-left:15px;
 }
 
-/*µ¼º½À¸ÓÒ±ß¼¸¸öÑùÊ½*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ß¼ï¿½ï¿½ï¿½ï¿½ï¿½Ê½*/
 .nav_ul{
     float:left;
 }
