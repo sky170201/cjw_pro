@@ -1,0 +1,142 @@
+/* 导航栏隐藏样式 */
+.ulDis{
+  display: none;
+}
+.classify:hover>.ulDis{
+  display: block;
+}
+.nav{
+  background:#da3e49;
+  height:40px;
+}
+.classify>.navH{
+  background:#c32c36;
+}
+.nav_content>ul>li.first_li{
+  background: #da3e49;
+}
+.nav>.nav_content>ul>li>a{
+  color:#fff;
+}
+.nav>.nav_content>ul>li:hover{
+  background:#c32c36;
+}
+/* 产品列表 */
+.goodsItem{
+  width:1320px;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.oneGoods{
+  width:230px;
+  height:368px;
+  border:1px solid #e8e8e8;
+  padding:5px;
+  margin:30px 10px 0;
+}
+.oneGoods:hover .box{
+  border:3px solid #e8e8e8;
+}
+.oneGoods:hover .supp{
+  display:block;
+}
+.box{
+  border:3px solid transparent;
+}
+.imgTitPri{
+  border:1px solid #e8e8e8;
+  padding:5px;
+}
+.imgTitPri>a>img{
+  width:100%;
+  
+}
+.imgTitPri>a>p{
+  color:#302c34;
+  padding:5px 5px 0;
+  height:36px;
+  line-height:18px;
+  overflow:hidden;
+  margin:5px 0;
+}
+.imgTitPri>a>p:hover{
+  color:#e9781b;
+}
+.imgTitPri>div>span{
+  font-family: Arial;
+  font-size:24px;
+  color:#ff0000;
+  padding:0 5px;
+  line-height: 30px;
+}
+.imgTitPri>div>span>i{
+  font-size:14px;
+}
+.imgTitPri>div>.del{
+  color:#999;
+  font-weight: normal;
+  font-size:14px;
+  padding-left:10px;
+  text-decoration:line-through;
+}
+.supp{
+  width:217px;
+  height:50px;
+  line-height: 50px;
+  background:#e8e8e8;
+  display: none;
+  padding:0 5px;
+  position: relative;
+}
+.supp>a{
+  position: absolute;
+  left:5px;
+}
+.supp>div:last-child{
+  position: absolute;
+  right:5px;
+  top:14px;
+}
+.supp>a{
+  color:#0006ff;
+}
+.supp>div{
+  height:22px;
+  line-height:22px;
+  color:#fff;
+  padding:0 11px;
+  border-radius:11px;
+  cursor: pointer;
+  background:#e9781b;
+}
+.supp>div>i{
+  display: inline-block;
+  width:10px;
+  height:9px;
+  margin-right:5px;
+  background:url(../image/product/ico_gz.png);
+}
+/* 分页 */
+.page{
+  width:238px;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
+  margin-top:15px;
+  margin-bottom:30px;
+}
+.page>a{
+  padding:0 7px;
+  height:24px;
+  line-height: 24px;
+  color:#302c34;
+  border:1px solid #c3c3c3;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background:#fff;
+}
+.page>.active{
+  background:#302C34;
+  color:#fff;
+}
