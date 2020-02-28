@@ -8,72 +8,108 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/register.css">
   <script src="js/vue.js"></script>
+  <!-- <link rel="stylesheet" href="./font/iconfont.css"> -->
 </head>
 <body>
-  <div class="reg_top">
-    <a href="index.html">
-      <img src="image/register/logonewb.png" alt="">
-    </a>
-    <b>欢迎注册</b>
-  </div>
-  <div class="reg_content">
-    <div class="rc_top">
-      <div class="reginfo">
-        <a href="">个人用户</a>
-        <a href="">供应商用户</a>
-        <span>已经有账号？请直接<a href="login.html">登录</a></span>
-      </div>
-    </div>
-    <div class="regForm">
-      <div class="rc_left">
-        <p>
-          <em><span>*</span>手机号：</em>
-          <input type="tel" placeholder="手机号码">
-        </p>
-        <p>
-          <em><span>*</span>验证码：</em>
-          <input type="text">
-          <img src="image/register/getCaptcha.jpg" alt="">
-        </p>
-        <p>
-          <em><span>*</span>手机号：</em>
-          <input type="tel">
-          <a href="">获取验证码</a>
-        </p>
-        <p>
-          <em><span>*</span>登录密码：</em>
-          <input type="password" placeholder="字母、符号或数字(除空格)至少包含两种">
-        </p>
-        <p>
-          <em><span>*</span>确认密码：</em>
-          <input type="password" placeholder="请再次输入密码">
-        </p>
-        <div class="checkinfo">
-          <input type="checkbox"> 我已阅读并同意<a href="">《我们加（厂家网商城）用户注册协议》</a>
-        </div>
-        <div class="regbtn">
-          <a href="">注册</a>
-        </div>
-      </div>
-      <a class="rc_right" href="">
-        <img src="image/register/QA_25.png" alt="">
+  <div>
+    <div class="reg_top">
+      <a href="index.html">
+        <img src="image/register/logonewb.png" alt="">
       </a>
+      <b>欢迎注册</b>
     </div>
-  </div>
-  <div class="regBottom">
-    <ul>
-      <li><a href="">关于我们</a></li>
-      <em>|</em>
-      <li><a href="">联系客服</a></li>
-      <em>|</em>
-      <li><a href="">商家入驻</a></li>
-      <em>|</em>
-      <li><a href="">隐私保护</a></li>
-      <em>|</em>
-      <li><a href="">免责条款</a></li>
-      <em>|</em>
-      <li><a href="">快递查询</a></li>
-    </ul>
+    <div class="reg_content">
+      <div class="rc_top">
+        <div class="reginfo">
+          <a href="">个人用户</a>
+          <a href="">供应商用户</a>
+          <span>已经有账号？请直接<a href="login.html">登录</a></span>
+        </div>
+      </div>
+      <div class="regForm" id="app">
+        <div class="rc_left">
+          <p>
+            <em><span>*</span>用户名：</em>
+            <input v-model="uname" type="tel" placeholder="请输入用户名" :class="{suc:u==1}">
+            <div v-show="u==2" style="color:red">用户名已注册</div>
+          </p>
+          <p>
+            <em><span>*</span>手机号：</em>
+            <input v-model="phone" type="text" placeholder="请输入手机号" :class="{suc:t==2}">
+            <div v-show="t==3" style="color:red">请输入合法的手机号</div>
+          </p>
+          <p>
+            <em><span>*</span>邮箱：</em>
+            <input v-model="email" type="tel" placeholder="请输入邮箱" :class="{suc:e==3}">
+            <div v-show="e==4" style="color:red">请输入正确的邮箱地址</div>
+          </p>
+          <p>
+            <em><span>*</span>登录密码：</em>
+            <input v-model="upwd" type="password" placeholder="字母、符号或数字(除空格)至少包含两种" :class="{suc:p==4}">
+            <div v-show="p==5" style="color:red">字母、符号或数字至少包含两种</div>
+          </p>
+          <p>
+            <em><span>*</span>确认密码：</em>
+            <input v-model="cupwd" type="password" placeholder="请再次输入密码" :class="{suc:ag==5}">
+            <div v-show="ag==6" style="color:red">两次密码不一致</div>
+          </p>
+          <div class="checkinfo">
+            <input type="checkbox"> 我已阅读并同意<a href="">《我们加（厂家网商城）用户注册协议》</a>
+          </div>
+          <div class="regbtn">
+            <a href="">注册</a>
+          </div>
+        </div>
+        <a class="rc_right" href="">
+          <img src="image/register/QA_25.png" alt="">
+        </a>
+      </div>
+    </div>
+    <script>
+      var vm=new Vue({
+        el:"#app",
+        data:{
+          uname:"",
+          phone:"",
+          email:"",
+          upwd:"",
+          cupwd:"",
+          u:0,
+          t:0,
+          e:0,
+          p:0,
+          ag:0,
+        },
+        methods:{
+          checkUname(){
+            var uname=this.uname;
+            this.axios.get("/checkuname",{params:{uname}}).then(res=>{
+              console.log(res);
+            })
+          }
+        },
+        watch:{
+          uname(){
+            this.checkUname();
+          }
+        },
+      })
+    </script>
+    <div class="regBottom">
+      <ul>
+        <li><a href="">关于我们</a></li>
+        <em>|</em>
+        <li><a href="">联系客服</a></li>
+        <em>|</em>
+        <li><a href="">商家入驻</a></li>
+        <em>|</em>
+        <li><a href="">隐私保护</a></li>
+        <em>|</em>
+        <li><a href="">免责条款</a></li>
+        <em>|</em>
+        <li><a href="">快递查询</a></li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>

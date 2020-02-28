@@ -111,10 +111,6 @@ body{
   color:#ababab;
   vertical-align: middle;
 }
-.rc_left>p:nth-child(2)>input{
-  width:120px;
-  margin-right:1px;
-}
 .rc_left>p>img{
   width:110px;
   height:35px;
@@ -194,4 +190,14 @@ body{
 .regBottom>ul>em{
   margin:0 20px;
   font-style: normal;
+}
+/* 注册提示信息 */
+.suc{
+  background:url(/image/register/suc.png)no-repeat right
+}
+.fail{
+  background:url(/image/register/fail.png)no-repeat right
+}
+.rc_left>div{
+  margin-left:12px;
 }
